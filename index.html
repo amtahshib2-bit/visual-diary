@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visual Diary by Abdullah</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Visual Diary</h1>
+  <div>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h2>Visual Diary</h2>
+    <p>by Abdullah</p>
+  </div>
+</div>
+
+<section id="portfolio">
+
+  <h2 style="text-align:center;margin-bottom:25px;">Portfolio</h2>
+
+  <div class="filters">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('street')">Street</button>
+    <button onclick="filter('portrait')">Portrait</button>
+    <button onclick="filter('nature')">Nature</button>
+  </div>
+
+  <div class="gallery">
+
+    <img src="https://source.unsplash.com/random/800x600?street" class="item street">
+    <img src="https://source.unsplash.com/random/800x600?portrait" class="item portrait">
+    <img src="https://source.unsplash.com/random/800x600?nature" class="item nature">
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <h2>About</h2>
+    <p>I am Abdullah, a photographer capturing cinematic moments through light and emotion.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2 style="text-align:center;">Contact</h2>
+
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>© 2026 Visual Diary by Abdullah</footer>
+
+<div class="lightbox" onclick="this.style.display='none'">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
